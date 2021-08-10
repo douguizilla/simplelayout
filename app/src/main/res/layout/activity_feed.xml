@@ -12,6 +12,11 @@
         android:layout_alignParentTop="true"
         />
 
+    <include layout="@layout/story_list_layout"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
     <include layout="@layout/navbar"
         android:layout_alignParentBottom="true"
         android:layout_height="wrap_content"

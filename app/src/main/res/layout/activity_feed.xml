@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".ui.FeedActivity">
 
+    <include layout="@layout/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        />
+
     <include layout="@layout/navbar"
         android:layout_alignParentBottom="true"
         android:layout_height="wrap_content"

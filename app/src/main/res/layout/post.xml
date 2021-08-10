@@ -10,14 +10,19 @@
     <ImageView
         android:id="@+id/postImage"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="280dp"
         android:src="@tools:sample/backgrounds/scenic"/>
+
+    <include layout="@layout/reaction_toolbar"/>
+
+    <include layout="@layout/liked_toolbar"/>
 
     <TextView
         android:id="@+id/postDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="16dp"
+
         android:text="@tools:sample/date/mmddyy"/>
 
 </LinearLayout>

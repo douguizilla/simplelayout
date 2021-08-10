@@ -1,39 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.FeedActivity">
 
-    <include layout="@layout/toolbar"
+
+    <include
+        android:id="@+id/toolbarIncluded"
+        layout="@layout/toolbar"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:layout_alignParentTop="true"
         />
 
-    <include layout="@layout/story_list_layout"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_below="@+id/toolbar"
-        />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_posts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/story_list_layout">
-
-        <include
-            layout="@layout/post_list"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintTop_toBottomOf="@+id/story_list_layout"
-            />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_below="@+id/storyListIncluded"
+        tools:listitem="@layout/post" />
 
 
-    <include layout="@layout/navbar"
-        android:layout_above="@+id/toolbar"
+    <include
+        android:id="@+id/storyListIncluded"
+        layout="@layout/story_list_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/toolbarIncluded"
+        />
+
+    <include
+        android:id="@+id/navbarIncluded"
+        layout="@layout/navbar"
         android:layout_alignParentBottom="true"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"

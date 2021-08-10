@@ -11,7 +11,7 @@
         android:id="@+id/postImage"
         android:layout_width="match_parent"
         android:layout_height="280dp"
-        android:src="@tools:sample/backgrounds/scenic"/>
+        tools:src="@tools:sample/backgrounds/scenic"/>
 
     <include layout="@layout/reaction_toolbar"/>
 

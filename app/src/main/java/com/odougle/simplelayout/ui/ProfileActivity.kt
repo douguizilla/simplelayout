@@ -1,4 +1,4 @@
-package com.odougle.simplelayout
+package com.odougle.simplelayout.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

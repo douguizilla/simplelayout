@@ -1,6 +1,6 @@
 ## Simple Layout
 
-This project was created to exercise the knowledge coming from the book Dominando Android com Kotlin in chapter 2, where teaches how to create layouts with XML to Android Apps. To create this layout I used:
+This project was created to exercise the knowledge coming from the book Dominando Android com Kotlin in chapter 2, where teaches how to create layouts with XML to Android Apps. To create this layout (inspired by [instagram](www.instagram.com)) I used:
 
  - Linear layout,
  - Relative layout,
